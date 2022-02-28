@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<envelop xmlns="it.redhat.atlasmap.sample/env" xmlns:cus="it.redhat.atlasmap.sample/customer">
+    <cus:customer>
+        <cus:name>maria</cus:name>
+    </cus:customer>
+</envelop>
