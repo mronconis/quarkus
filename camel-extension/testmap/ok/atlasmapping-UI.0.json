@@ -1,0 +1,63 @@
+{
+  "AtlasMapping" : {
+    "jsonType" : "io.atlasmap.v2.AtlasMapping",
+    "dataSource" : [ {
+      "jsonType" : "io.atlasmap.xml.v2.XmlDataSource",
+      "id" : "person-edeaa31d-4cc8-44a5-923f-6cc848a984de",
+      "name" : "person",
+      "description" : "Source document person type: XSD",
+      "uri" : "atlas:xml:person-edeaa31d-4cc8-44a5-923f-6cc848a984de",
+      "dataSourceType" : "SOURCE",
+      "xmlNamespaces" : {
+        "xmlNamespace" : [ ]
+      }
+    }, {
+      "jsonType" : "io.atlasmap.xml.v2.XmlDataSource",
+      "id" : "output-768cfc5e-31bc-4d2a-bed5-fd2328ba0791",
+      "name" : "output",
+      "description" : "Target document output type: XML",
+      "uri" : "atlas:xml:output-768cfc5e-31bc-4d2a-bed5-fd2328ba0791",
+      "dataSourceType" : "TARGET",
+      "xmlNamespaces" : {
+        "xmlNamespace" : [ {
+          "alias" : "cus",
+          "uri" : "it.redhat.atlasmap/customer"
+        } ]
+      }
+    } ],
+    "mappings" : {
+      "mapping" : [ {
+        "jsonType" : "io.atlasmap.v2.Mapping",
+        "inputField" : [ {
+          "jsonType" : "io.atlasmap.xml.v2.XmlField",
+          "docId" : "person-edeaa31d-4cc8-44a5-923f-6cc848a984de",
+          "path" : "/Person/name",
+          "fieldType" : "STRING",
+          "name" : "name",
+          "userCreated" : false,
+          "attribute" : false
+        } ],
+        "outputField" : [ {
+          "jsonType" : "io.atlasmap.xml.v2.XmlField",
+          "docId" : "output-768cfc5e-31bc-4d2a-bed5-fd2328ba0791",
+          "path" : "/envelop/cus:customer/cus:name",
+          "fieldType" : "STRING",
+          "name" : "name",
+          "userCreated" : false,
+          "attribute" : false
+        } ],
+        "id" : "mapping.194777"
+      } ]
+    },
+    "lookupTables" : {
+      "lookupTable" : [ ]
+    },
+    "constants" : {
+      "constant" : [ ]
+    },
+    "properties" : {
+      "property" : [ ]
+    },
+    "name" : "UI.0"
+  }
+}

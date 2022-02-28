@@ -30,6 +30,7 @@ public class AtlasMapTest {
 
         session.setSourceDocument("person", source);
         context.process(session);
+
         String target = (String) session.getTargetDocument("customer-schemaset-3f6c7792-dfba-4652-b9ea-c2762d5a8e14");
 
         log.info("Target document from schema: " + target);
