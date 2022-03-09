@@ -10,8 +10,10 @@
   <description>Quarkus demo projects</description>
 
   <modules>
-    <module>atlasmap</module>
-    <module>camel-extension</module>
+    <module>atlasmap-custom</module>
+    <module>camel-atlasmap</module>
+    <module>camel-swagger</module>
+    <module>quarkus-swagger</module>
   </modules>
 
 </project>
