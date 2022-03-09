@@ -14,7 +14,7 @@
   </xs:schema>
     
   <atlas:AdditionalSchemas>
-    <xs:schema targetNamespace="it.redhat.atlasmap.sample/customer">
+    <xs:schema targetNamespace="it.redhat.atlasmap.sample/customer" elementFormDefault="qualified">
       <xs:element name="customer">
         <xs:complexType>
           <xs:sequence>
