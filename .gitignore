@@ -1,6 +1,6 @@
 #Maven
 target/
-
+quarkus-app/
 # Eclipse
 .project
 .classpath
